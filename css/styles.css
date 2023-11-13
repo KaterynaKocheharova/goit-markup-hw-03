@@ -1,0 +1,151 @@
+/* GENERAL STYLES */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #434455;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* DETAILED STYLES */
+
+/* HEADER */
+
+.logo {
+  color: #4d5ae5;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+.logo-accent {
+  color: #2e2f42;
+}
+
+.nav-item {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  color: #404bbf;
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.address-item {
+  color: #434455;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+
+.address-item:hover,
+.address-item:focus {
+  color: #404bbf;
+}
+
+/* HERO */
+
+.hero,
+.footer {
+  background-color: #2e2f42;
+}
+
+.hero-title {
+  color: #fff;
+  text-align: center;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+}
+
+.hero-button {
+  background-color: #4d5ae5;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
+  cursor: pointer;
+}
+
+/* BENEFITS */
+
+.benefits-title,
+.team-list-title,
+.portfolio-list-title {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+
+.benefits-text,
+.team-text,
+.portfolio-text {
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+
+/*  TEAM */
+
+.team {
+  background-color: #f4f4fd;
+}
+
+.team-title,
+.portfolio-title {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+.team-card {
+  background-color: #fff;
+}
+
+.team-list-title {
+  text-align: center;
+}
+
+.team-text {
+  text-align: center;
+}
+
+/* FOOTER */
+
+.footer-logo-accent {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  color: #f4f4fd;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
