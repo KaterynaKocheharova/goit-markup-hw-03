@@ -141,7 +141,7 @@ img {
 }
 
 .benefits-item {
-  width: calc((100% - 3 * 24) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .benefits-text {
@@ -149,8 +149,8 @@ img {
 }
 
 .benefits-title {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 /* POSITIONING IN THE TEAM-SECTION */
