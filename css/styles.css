@@ -91,13 +91,12 @@ img {
 /* POSITIONING IN HERO */
 
 .hero {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
-  width: 496px;
-  height: 120px;
+  max-width: 496px;
   margin: auto;
   margin-bottom: 48px;
 }
@@ -109,6 +108,11 @@ img {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 /* POSITIONING IN THE BENEFITS SECTION */
