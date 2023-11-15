@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* GENERAL POSITIONING STYLES */
 
 h1,
@@ -42,181 +46,27 @@ img {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+  border: 3px solid black;
 }
 
-/* POSITIONING IN HEADER */
+/* HEADER */
 
 .header-section {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
   display: flex;
-  gap: 332px;
+  align-items: center;
 }
 
 .main-nav {
   display: flex;
-  align-items: center;
+  margin-right: auto;
 }
 
 .logo {
   margin-right: 76px;
-}
-
-.nav-list {
-  display: flex;
-  gap: 40px;
-}
-
-.nav-link {
-  padding: 24px 0 24px;
-}
-
-.nav-list-item {
-  width: calc((100% - 40 * 2) / 3);
-}
-
-.address-list {
-  display: flex;
-  gap: 40px;
-}
-
-.address-item {
-  width: calc((100% - 40) / 2);
-}
-
-/* POSITIONING IN HERO */
-
-.hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
-}
-
-.hero-title {
-  max-width: 496px;
-  margin: auto;
-  margin-bottom: 48px;
-}
-
-.hero-button {
-  padding: 16px 32px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  min-width: 169px;
-  height: 56px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* POSITIONING IN THE BENEFITS SECTION */
-
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect (0 0 0 0);
-  overflow: hidden;
-}
-
-.benefits-list {
-  display: flex;
-  gap: 24px;
-}
-
-.benefits-item {
-  width: calc((100% - 72px) / 4);
-}
-
-.benefits-text {
-  width: 264px;
-}
-
-.benefits-title {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-/* POSITIONING IN THE TEAM-SECTION */
-
-.team-title {
-  margin-bottom: 72px;
-}
-
-.team-list {
-  display: flex;
-  gap: 24px;
-}
-
-.team-card {
-  width: calc((100% - 74) / 4);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.team-position-and-name {
-  padding: 32px 0 32px;
-}
-
-.team-list-title {
-  margin-bottom: 8px;
-}
-
-/* POSITIONING IN PORTFOLIO SECTION */
-
-.portfolio-title {
-  margin-bottom: 72px;
-}
-
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 24px;
-  column-gap: 48px;
-}
-
-.portfolio-item {
-  width: calc((100% - 72px) / 3);
-  border: 1px solid #e7e9fc;
-  padding-bottom: 32px;
-}
-
-.portfolio-item-title {
-  margin-top: 32px;
-}
-
-/* POSITIONING IN FOOTER */
-
-.footer {
-  padding-top: 101.5px;
-  padding-bottom: 100px;
-}
-
-.footer-logo {
-  margin-bottom: 17.5px;
-}
-
-.footer-text {
-  width: 264px;
-}
-/* HEADER */
-
-.logo {
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -230,7 +80,18 @@ img {
   color: #2e2f42;
 }
 
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-list-item {
+  width: calc((100% - 40 * 2) / 3);
+}
+
 .nav-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
@@ -247,7 +108,18 @@ img {
   font-style: normal;
 }
 
-.address-link {
+.contacts-list {
+  display: flex;
+  gap: 40px;
+}
+
+.contacts-item {
+  width: calc((100% - 40) / 2);
+}
+
+.contacts-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: #434455;
   font-size: 16px;
   font-weight: 400;
@@ -255,8 +127,8 @@ img {
   letter-spacing: 0.32px;
 }
 
-.address-link:hover,
-.address-link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: #404bbf;
 }
 
@@ -267,7 +139,15 @@ img {
   background-color: #2e2f42;
 }
 
+.hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
 .hero-title {
+  width: 496px;
+  margin: auto;
+  margin-bottom: 48px;
   color: #fff;
   text-align: center;
   font-size: 56px;
@@ -276,12 +156,21 @@ img {
 }
 
 .hero-button {
-  background-color: #4d5ae5;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: #fff;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -290,7 +179,40 @@ img {
   cursor: pointer;
 }
 
-/* BENEFITS */
+/* BENEFITS SECTION */
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.benefits-list {
+  display: flex;
+  gap: 24px;
+}
+
+.benefits-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.benefits-title {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
 
 .benefits-title,
 .team-list-title,
@@ -309,7 +231,7 @@ img {
   letter-spacing: 0.32px;
 }
 
-/*  TEAM */
+/* TEAM-SECTION */
 
 .team-section {
   background-color: #f4f4fd;
@@ -325,25 +247,79 @@ img {
   text-transform: capitalize;
 }
 
+.team-title {
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
 .team-card {
+  width: calc((100% - 74) / 4);
   background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-position-and-name {
+  padding: 32px 0 32px;
 }
 
 .team-list-title {
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-text {
   text-align: center;
 }
 
-/* FOOTER */
+/* PORTFOLIO-SECTION */
+
+.portfolio-title {
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-item-and-text {
+  padding: 32px 16px;
+}
+
+.portfolio-item {
+  width: calc((100% - 72px) / 3);
+  border-top: none;
+  border: 1px solid #e7e9fc;
+}
+
+.portfolio-item-title {
+  margin-bottom: 8px;
+}
+
+/* POSITIONING IN FOOTER */
+
+.footer {
+  padding-top: 101.5px;
+  padding-bottom: 100px;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 17.5px;
+}
 
 .footer-logo-accent {
   color: #f4f4fd;
 }
 
 .footer-text {
+  max-width: 264px;
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.32px;
