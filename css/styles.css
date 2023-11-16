@@ -48,6 +48,9 @@ img {
   padding: 0 15px;
 }
 
+section {
+}
+
 /* HEADER */
 
 .header-section {
@@ -66,6 +69,7 @@ img {
 }
 
 .logo {
+  display: inline-block;
   margin-right: 76px;
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
@@ -90,6 +94,7 @@ img {
 }
 
 .nav-link {
+  display: inline-block;
   padding-top: 24px;
   padding-bottom: 24px;
   color: #2e2f42;
@@ -118,6 +123,7 @@ img {
 }
 
 .contacts-link {
+  display: inline-block;
   padding-top: 24px;
   padding-bottom: 24px;
   color: #434455;
@@ -209,8 +215,6 @@ img {
 }
 
 .benefits-title {
-  padding-top: 8px;
-  padding-bottom: 8px;
   margin-bottom: 8px;
 }
 
